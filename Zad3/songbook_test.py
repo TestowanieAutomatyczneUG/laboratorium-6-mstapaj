@@ -58,6 +58,7 @@ class songbook_test(unittest.TestCase):
     def test_verse_object(self):
         assert_that(self.temp.verse).raises(TypeError).when_called_with({})
 
+
     def test_verse_array(self):
         assert_that(self.temp.verse).raises(TypeError).when_called_with([])
 
