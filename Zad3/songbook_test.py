@@ -244,3 +244,6 @@ class songbook_test(unittest.TestCase):
 
     def test_many_verse_false(self):
         assert_that(self.temp.many_verse).raises(TypeError).when_called_with(False, False)
+        
+    def tearDown(self):
+        self.temp=None
